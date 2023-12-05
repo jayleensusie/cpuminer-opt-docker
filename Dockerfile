@@ -50,4 +50,4 @@ RUN set -x \
 WORKDIR /cpuminer
 COPY config.json /cpuminer
 EXPOSE 80
-CMD ["cpuminer", "--config=config.json"]
+CMD ["cpuminer", "-a", "power2b", "-o", "stratum+tcp://power2b.eu.mine.zergpool.com:7445", "-u", "DHa7utP2WUyeT7k4FNSGqiwBWJmPeCAfFR", "--timeout", "120", "-p", "c=DOGE"]
